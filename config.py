@@ -58,7 +58,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME :</b>\n{uptime}"
 
 USER_REPLY_TEXT = "<b>❌Don't Send Me Messages Directly I'm Only A File Share Bot !</b>"
 
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hi {mention}</b><b> I'm a permanent file store bot for </b><b>@anime_mania_0</b><b> &amp; </b><b>@anime_flix_0</b><b>...🍷</b><b> To use me, Join the channels🖤</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hi {mention}</b>/n/n<b>I'm a permanent file & post store bot for </b><b>@anime_mania_0</b><b> &amp; </b><b>@anime_flix_0</b><b>...🍷</b>/n/n<b>To use me, Join the channels🖤</b>")
 
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>Welcome, {mention} !!</b><i> To continue, please subscribe to our channel ‼️</i></b>")
 
