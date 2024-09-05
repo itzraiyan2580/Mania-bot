@@ -4,7 +4,7 @@ services:
     name: ai-agent-test
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python3 bot.py
+    startCommand: python3 main.py
     repo: https://github.com/itzraiyan2580/Naruto-Uzumaki-AI-Agent-Temp/      
     branch: main
     envVars:
