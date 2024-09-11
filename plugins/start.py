@@ -89,7 +89,7 @@ async def start_command(client: Client, message: Message):
                 pass
 
 
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️𝗜𝗠𝗣𝗢𝗥𝗧𝗔𝗡𝗧❗️</b>\n\n<b>The following posts will be automatically deleted in {file_auto_delete} (Due To Copyright Issues). Please download the episodes or save the posts to a safe place before they are removed. Don't miss out!</b>.")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️𝗜𝗠𝗣𝗢𝗥𝗧𝗔𝗡𝗧❗️</b>\n\n<b>Tʜᴇ ғᴏʟʟᴏᴡɪɴɢ ᴘᴏsᴛs ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ɪɴ {file_auto_delete} (Dᴜᴇ Tᴏ Cᴏᴘʏʀɪɢʜᴛ Issᴜᴇs). Pʟᴇᴀsᴇ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ᴇᴘɪsᴏᴅᴇs ᴏʀ sᴀᴠᴇ ᴛʜᴇ ᴘᴏsᴛs ᴛᴏ ᴀ sᴀғᴇ ᴘʟᴀᴄᴇ ʙᴇғᴏʀᴇ ᴛʜᴇʏ ᴀʀᴇ ʀᴇᴍᴏᴠᴇᴅ. Dᴏɴ'ᴛ ᴍɪss ᴏᴜᴛ‼️🖤</b>.")
 
         # Schedule the file deletion
         asyncio.create_task(delete_files(madflix_msgs, client, k))
